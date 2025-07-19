@@ -52,3 +52,16 @@ GPT-2_LLM_Architecture
     - Concludes Pretraining step.
 8. Attempted Fine-Tuning on instruction datasets, but significantly poor performance.
     - Likely due to a signficantly lower Parameter count, for any meaningful usage.
+
+## Inspired and Learnt from
+```
+@book{build-llms-from-scratch-book,
+  author       = {Sebastian Raschka},
+  title        = {Build A Large Language Model (From Scratch)},
+  publisher    = {Manning},
+  year         = {2024},
+  isbn         = {978-1633437166},
+  url          = {https://www.manning.com/books/build-a-large-language-model-from-scratch},
+  github       = {https://github.com/rasbt/LLMs-from-scratch}
+}
+```
