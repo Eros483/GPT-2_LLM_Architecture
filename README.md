@@ -40,3 +40,15 @@ GPT-2_LLM_Architecture
     │   misc.py
     │   multihead_attention.py
 ```
+## Pipeline Explaination
+1. Created MultiHeadAttention Module
+    - Added KV cache for observing a 5x performance boost.
+2. Utilised online available GPT configurations for different sizes, importable form `config/config.py`
+3. Created Layer Noramlisation, GELU and Feed Forward Blocks.
+4. Joined everything together into a Transformer Block.
+5. Stacked Blocks in `n` layers as per selected Configuration.
+6. Utilised tiktoken's `BPE` Tokenizer, as self implementation was significantly worse in performance.
+7. Attempted to train on online datasets, but time taken and generated performance, was significantly worse than open-sourced GPT2 weights.
+    - Concludes Pretraining step.
+8. Attempted Fine-Tuning on instruction datasets, but significantly poor performance.
+    - Likely due to a signficantly lower Parameter count, for any meaningful usage.
